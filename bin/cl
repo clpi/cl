@@ -1,0 +1,18 @@
+#!/usr/bin/env lua
+local p = require("package")
+local c = require("cl")
+local arg = require("argparse")
+local cj = require("cjson")
+local col = require("ansicolors")
+
+-- require("cl")()
+print(package.loaded)
+for k, v in pairs(package.loaded) do
+	print(k, v)
+end
+for k, v in pairs(package.preload) do
+	print(k, v)
+end
+
+c("hi", "world")
+-- vim:set ft=lua:
