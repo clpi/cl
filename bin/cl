@@ -1,7 +1,7 @@
 #!/usr/bin/env lua
 local p = require("package")
 local c = require("cl")
-local arg = require("argparse")
+local parse = require("argparse")
 local cj = require("cjson")
 local col = require("ansicolors")
 
@@ -15,4 +15,7 @@ for k, v in pairs(package.preload) do
 end
 
 c("hi", "world")
+
+-- parse:flag("--version", "Show version information")
+
 -- vim:set ft=lua:
